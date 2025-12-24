@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom Animations for Hero Section and Navbar */
+
 @theme {
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float-delayed 8s ease-in-out infinite;
@@ -59,7 +59,7 @@
   }
 }
 
-/* Custom utility classes */
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -81,7 +81,7 @@
   animation: scroll 2s ease-in-out infinite;
 }
 
-/* Animation delays */
+
 .delay-300 {
   animation-delay: 300ms;
 }
@@ -93,3 +93,56 @@
 .delay-700 {
   animation-delay: 700ms;
 }
+
+@keyframes gridMove {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 40px 40px, 40px 40px;
+  }
+}
+
+.hero-grid-bg {
+  background-color: #020b1c;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 20s linear infinite;
+}
+
+
+
+/* ===============================
+   Auto-Aligned Outline Ghost Text
+================================ */
+
+.ghost-outline-heading {
+  position: absolute;
+  inset-inline: 0;                 /* left + right = 0 (auto center) */
+  top: -3.25rem;                   /* working space from main heading */
+
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Controlled size (no overflow) */
+.ghost-outline-lg {
+  font-size: 61px;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  .ghost-outline-lg {
+    font-size: 120px;
+  }
+}
+
+

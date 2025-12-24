@@ -4,70 +4,86 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-20">
-      {/* Background floating elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Clouds */}
-        <div className="absolute top-20 left-10 opacity-20">
-          <Image src="/images/clouds.png" alt="" width={100} height={50} className="w-24" />
-        </div>
-        <div className="absolute top-28 left-1/4 opacity-15">
-          <Image src="/images/clouds.png" alt="" width={90} height={45} className="w-20" />
-        </div>
-        <div className="absolute top-16 right-1/4 opacity-20">
-          <Image src="/images/clouds.png" alt="" width={120} height={60} className="w-28" />
-        </div>
+    <section className="relative min-h-screen pt-24 bg-[#020b1c] hero-grid-bg overflow-hidden">
 
-        {/* Blue dots */}
-        <div className="absolute top-32 left-1/3 w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
-        <div className="absolute top-1/4 right-1/3 w-2 h-2 bg-cyan-400 rounded-full"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
-        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#020b1c]/70 via-[#020b1c]/60 to-[#020b1c] pointer-events-none" />
 
-        {/* Pink sphere - top right */}
-        <div className="absolute top-28 right-20">
-          <Image src="/images/pink-sphere.png" alt="" width={100} height={100} className="w-20 lg:w-24" />
-        </div>
+      {/* FLOATING ELEMENTS */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Image
+          src="/images/clouds.png"
+          alt=""
+          width={120}
+          height={60}
+          className="absolute top-24 left-16 opacity-20 hidden md:block"
+        />
+
+        <Image
+          src="/images/pink-sphere.png"
+          alt=""
+          width={90}
+          height={90}
+          className="absolute top-40 right-24 opacity-30 hidden md:block"
+        />
+
+        <span className="absolute top-1/3 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full" />
+        <span className="absolute bottom-1/3 right-1/3 w-2 h-2 bg-cyan-400 rounded-full" />
       </div>
 
-      {/* Main content */}
-      <div className="relative w-full max-w-[1600px] mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-4 lg:gap-8 items-center">
-          {/* Left - Text */}
-          <div className="space-y-6">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              We Provide{" "}
-              <Image
-                src="/images/lightbulb.png"
-                alt="💡"
-                width={60}
-                height={60}
-                className="inline-block w-12 lg:w-14 align-middle -mt-2"
-              />
+      {/* MAIN GRID */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+
+          {/* LEFT TEXT */}
+          <div className="space-y-6 text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <span className="inline-flex items-center gap-3">
+                We Provide
+                <Image
+                  src="/images/lightbulb.png"
+                  alt=""
+                  width={45}
+                  height={45}
+                  className="inline-block"
+                />
+              </span>
               <br />
-              Smart Business
-              <br />
+              Smart Business <br />
               Solutions
             </h1>
-            <p className="text-white text-base lg:text-lg">
+
+            <p className="text-white/80 max-w-xl mx-auto lg:mx-0">
               Grow your Business With Us Best Business Solutions
             </p>
           </div>
 
-          {/* Right - Character */}
-          <div className="relative -mt-8 lg:mt-0">
+          {/* RIGHT IMAGE */}
+          <div className="relative flex justify-center lg:justify-end">
             <Image
               src="/images/hero-character.png"
-              alt="VR Character"
-              width={700}
-              height={700}
+              alt=""
+              width={650}
+              height={650}
               priority
-              className="w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0"
+              className="w-full max-w-md lg:max-w-lg"
             />
           </div>
         </div>
       </div>
+
+      {/* WAVE (ONLY VISUAL) */}
+      <div className="absolute bottom-0 left-0 w-full pointer-events-none">
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full h-[160px]">
+          <path
+            d="M0,80 C180,140 360,0 540,40 720,80 900,120 1080,90 1260,60 1440,80 1440,160 L0,160 Z"
+            fill="#010814"
+          />
+        </svg>
+      </div>
+
+      {/* IMPORTANT SPACER */}
+      <div className="h-[160px]" />
     </section>
   );
 };
