@@ -22,22 +22,38 @@ export default function TestimonialsSection() {
 
         {/* ================= HEADING ================= */}
         <div className="relative text-center mb-20">
+          <svg
+            width="46"
+            height="10"
+            viewBox="0 0 46 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute -top-0 left-1/2 -translate-x-1/2"
+          >
+            <path
+              d="M1 5 C5 1, 9 9, 13 5 C17 1, 21 9, 25 5 C29 1, 33 9, 37 5 C41 1, 45 9, 49 5"
+              stroke="url(#waveGradient)"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+            <defs>
+              <linearGradient id="waveGradient" x1="0" y1="0" x2="46" y2="0">
+                <stop stopColor="#186EF2" />
+                <stop offset="1" stopColor="#6D18EF" />
+              </linearGradient>
+            </defs>
+          </svg>
 
-          {/* Ghost */}
-          <h2 className="ghost-outline-heading ghost-outline-lg">
+          {/* Ghost Text */}
+          <div
+            className="absolute left-1/2 -translate-x-1/2 -top-16 text-[140px] font-black leading-none pointer-events-none select-none"
+            style={{ color: "rgba(255, 255, 255, 0.03)" }}
+          >
             SAYS
-          </h2>
-
-          {/* Blue Wave */}
-          <div className="flex justify-center mb-5 relative z-10">
-            <span className="relative w-12 h-[3px] bg-indigo-500 rounded-full">
-              <span className="absolute -top-1 left-1 w-2 h-2 bg-indigo-500 rounded-full"></span>
-              <span className="absolute -top-1 right-1 w-2 h-2 bg-indigo-500 rounded-full"></span>
-            </span>
           </div>
 
           <h2 className="relative z-10 text-4xl md:text-5xl font-bold text-white leading-tight">
-            People’s Say About Our <br />
+            People's Say About Our <br />
             Support & Services
           </h2>
         </div>
@@ -49,8 +65,18 @@ export default function TestimonialsSection() {
               key={i}
               className="bg-[#2a2c3d] rounded-xl p-8 relative"
             >
-              {/* Quote */}
-              <div className="text-indigo-500 text-4xl mb-4">“</div>
+              {/* Quote Icon Image */}
+              <div className="mb-4">
+                <div className="w-10 h-8 relative">
+                  <Image
+                    src="/images/quote-icon.png"
+                    alt="Quote"
+                    width={40}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
 
               <p className="text-white/70 text-sm leading-relaxed mb-6">
                 {item.text}
@@ -66,13 +92,21 @@ export default function TestimonialsSection() {
                   </p>
                 </div>
 
-                {/* Chat icon */}
+                {/* Chat Bubble Icon Image */}
                 <div className="relative">
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-md flex items-center justify-center text-xs text-white">
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-md flex items-center justify-center text-xs text-white font-bold z-10">
                     !
                   </span>
                   <div className="bg-indigo-500/20 p-3 rounded-lg">
-                    💬
+                    <div className="w-7 h-7 relative">
+                      <Image
+                        src="/images/chat-icon.png"
+                        alt="Chat"
+                        width={28}
+                        height={28}
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -89,11 +123,17 @@ export default function TestimonialsSection() {
 
       </div>
 
-      {/* ================= FLOATING ICONS ================= */}
-      <span className="absolute top-20 left-20 text-green-400 text-3xl">✔</span>
-      <span className="absolute top-32 right-24 text-red-500 text-3xl">▶</span>
-      <span className="absolute bottom-24 left-24 text-yellow-400 text-3xl">🔔</span>
-      <span className="absolute bottom-28 right-28 text-purple-500 text-3xl">💬</span>
+      {/* ================= FLOATING ICONS BACKGROUND ================= */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/testimonial-bg-icons.png"
+            alt="Background Icons"
+            fill
+            className="object-contain opacity-80"
+          />
+        </div>
+      </div>
 
     </section>
   );

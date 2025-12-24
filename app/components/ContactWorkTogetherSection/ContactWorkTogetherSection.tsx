@@ -10,7 +10,7 @@ export default function ContactWorkTogetherSection() {
         {/* ================= LEFT ILLUSTRATION ================= */}
         <div className="relative flex justify-center">
           <Image
-            src="/images/contact-illustration.png" // replace with your illustration
+            src="/images/contact-illustration.png" 
             alt="Work Together"
             width={520}
             height={520}
@@ -22,9 +22,9 @@ export default function ContactWorkTogetherSection() {
         <div className="relative">
 
           {/* Ghost */}
-          <h2 className="ghost-outline-heading ghost-outline-lg text-left">
-            CONTACT
-          </h2>
+          <div className="absolute -left-4 top-0 text-[120px] font-black text-white/5 leading-none pointer-events-none">
+            CALL
+          </div>
 
           {/* Blue Wave */}
           <div className="flex items-center gap-2 mb-5 relative z-10">

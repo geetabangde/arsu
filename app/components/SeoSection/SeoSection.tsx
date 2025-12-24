@@ -26,22 +26,37 @@ export default function SeoSection() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
-        <div className="relative">
+        <div className="relative inline-block">
+            <svg
+              width="46"
+              height="10"
+              viewBox="0 0 46 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute -top-0 left-18 -translate-x-1/2"
+            >
+              <path
+                d="M1 5 
+                    C5 1, 9 9, 13 5 
+                    C17 1, 21 9, 25 5
+                    C29 1, 33 9, 37 5
+                    C41 1, 45 9, 49 5"
+                stroke="url(#waveGradient)"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <defs>
+                <linearGradient id="waveGradient" x1="0" y1="0" x2="46" y2="0">
+                  <stop stopColor="#186EF2" />
+                  <stop offset="1" stopColor="#6D18EF" />
+                </linearGradient>
+              </defs>
+            </svg>
 
           {/* Ghost Text Background */}
-          <div className="absolute -left-4 top-0 text-[120px] font-black text-white/5 leading-none pointer-events-none">
+           <div className="absolute -left-4 -top-12 text-[140px] font-black text-white/[0.03] leading-none pointer-events-none select-none">
             SEO
-          </div>
-
-          {/* Decorative Wave Line */}
-          <div className="flex items-center gap-1 mb-6 relative z-10">
-            <div className="relative">
-              <div className="w-12 h-[2px] bg-gradient-to-r from-blue-500 to-purple-500"></div>
-              <div className="absolute -top-[3px] left-0 w-2 h-2 bg-blue-500 rounded-full"></div>
-              <div className="absolute -top-[3px] left-3 w-2 h-2 bg-purple-500 rounded-full"></div>
-              <div className="absolute -top-[3px] right-0 w-2 h-2 bg-pink-500 rounded-full"></div>
             </div>
-          </div>
 
           <h3 className="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
             Manage Business SEO <br /> 
