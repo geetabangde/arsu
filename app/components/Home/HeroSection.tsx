@@ -5,11 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen pt-24 bg-[#020b1c] hero-grid-bg overflow-hidden">
-
-      {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#020b1c]/70 via-[#020b1c]/60 to-[#020b1c] pointer-events-none" />
-
-      {/* FLOATING ELEMENTS */}
       <div className="absolute inset-0 pointer-events-none">
         <Image
           src="/images/clouds.png"
@@ -26,16 +22,12 @@ const HeroSection = () => {
           height={90}
           className="absolute top-40 right-24 opacity-30 hidden md:block"
         />
-
         <span className="absolute top-1/3 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full" />
         <span className="absolute bottom-1/3 right-1/3 w-2 h-2 bg-cyan-400 rounded-full" />
       </div>
 
-      {/* MAIN GRID */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-
-          {/* LEFT TEXT */}
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
               <span className="inline-flex items-center gap-3">
@@ -57,8 +49,7 @@ const HeroSection = () => {
               Grow your Business With Us Best Business Solutions
             </p>
           </div>
-
-          {/* RIGHT IMAGE */}
+        
           <div className="relative flex justify-center lg:justify-end">
             <Image
               src="/images/hero-character.png"
@@ -71,8 +62,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* WAVE (ONLY VISUAL) */}
       <div className="absolute bottom-0 left-0 w-full pointer-events-none">
         <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full h-[160px]">
           <path
@@ -81,8 +70,6 @@ const HeroSection = () => {
           />
         </svg>
       </div>
-
-      {/* IMPORTANT SPACER */}
       <div className="h-[160px]" />
     </section>
   );

@@ -146,3 +146,29 @@
 }
 
 
+.ghost-outline-heading {
+  position: absolute;
+  inset-inline: 0;
+  top: -3.5rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+}
+
+.ghost-outline-lg {
+  font-size: 64px;
+}
+
+@media (min-width: 1024px) {
+  .ghost-outline-lg {
+    font-size: 120px;
+  }
+}
+
+
+
