@@ -59,11 +59,11 @@ export default function TestimonialsSection() {
         </div>
 
         {/* ================= CARDS ================= */}
-        <div className="grid md:grid-cols-2 gap-10 relative z-10">
+        <div className="grid md:grid-cols-2 gap-6 relative z-10 max-w-4xl mx-auto">
           {testimonials.map((item, i) => (
             <div
               key={i}
-              className="bg-[#2a2c3d] rounded-xl p-8 relative"
+              className="bg-[#2a2c3d] p-8 relative"
             >
               {/* Quote Icon Image */}
               <div className="mb-4">
@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
                 {item.text}
               </p>
 
-              <div className="border-t border-white/10 pt-4 flex justify-between items-center">
+             <div className="border-t border-white/10 pt-4 flex justify-between items-center">
                 <div>
                   <h4 className="text-white font-semibold">
                     {item.name}
@@ -92,24 +92,20 @@ export default function TestimonialsSection() {
                   </p>
                 </div>
 
-                {/* Chat Bubble Icon Image */}
-                <div className="relative">
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-md flex items-center justify-center text-xs text-white font-bold z-10">
-                    !
-                  </span>
-                  <div className="bg-indigo-500/20 p-3 rounded-lg">
-                    <div className="w-7 h-7 relative">
-                      <Image
-                        src="/images/chat-icon.png"
-                        alt="Chat"
-                        width={28}
-                        height={28}
-                        className="object-contain"
-                      />
-                    </div>
+                {/* Chat Icon */}
+                <div className="flex items-center">
+                  <div className="w-[40px] h-[30px]">
+                    <Image
+                      src="/images/chat-icon.png"
+                      alt="Chat"
+                      width={100}
+                      height={50}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
@@ -127,7 +123,7 @@ export default function TestimonialsSection() {
       <div className="absolute inset-0 pointer-events-none">
         <div className="relative w-full h-full">
           <Image
-            src="/images/testimonial-bg-icons.png"
+            src="/images/testiminol.png"
             alt="Background Icons"
             fill
             className="object-contain opacity-80"

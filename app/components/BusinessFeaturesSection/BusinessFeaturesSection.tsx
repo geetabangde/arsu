@@ -5,13 +5,13 @@ const services = [
     title: "Graphics Design",
     desc: "Sed ut perspiciatis unde omnis",
     icon: "/images/graphics.png",
-    offset: "lg:translate-x-12",
+    offset: "lg:translate-x-0",
   },
   {
     title: "Ideation & Evaluation",
     desc: "Sed ut perspiciatis unde omnis",
     icon: "/images/idea.png",
-    offset: "lg:-translate-x-8",
+    offset: "lg:translate-x-12",
   },
   {
     title: "Brand Identity",
@@ -23,13 +23,13 @@ const services = [
     title: "Customer Service",
     desc: "Sed ut perspiciatis unde omnis",
     icon: "/images/support.png",
-    offset: "lg:-translate-x-12",
+    offset: "lg:-translate-x-10",
   },
   {
     title: "Web Strategy",
     desc: "Sed ut perspiciatis unde omnis",
     icon: "/images/web.png",
-    offset: "lg:translate-x-10",
+   offset: "lg:-translate-x-30",
   },
 ];
 
@@ -49,7 +49,7 @@ function BusinessFeaturesSection() {
           />
 
           {/* RIGHT CONTENT */}
-          <div className="relative space-y-10 inline-block">
+          <div className="relative space-y-8 max-w-xl ml-auto">
             <svg
               width="46"
               height="10"
@@ -88,14 +88,16 @@ function BusinessFeaturesSection() {
             </h2>
 
             {/* Cards */}
-            <div className="space-y-6">
+            <div className="space-y-5">
               {services.map((item, index) => (
                 <div
                   key={index}
                   className={`flex items-center justify-between
-        bg-white/5 hover:bg-white/10 transition
-        rounded-xl px-6 py-5
-        ${item.offset}`}
+                bg-white/5 hover:bg-white/10 transition
+                  rounded-xl px-10 py-9
+                  shadow-lg shadow-black/20
+                  backdrop-blur-sm
+                    ${item.offset}`}
                 >
                   {/* LEFT SIDE (ICON + TEXT) */}
                   <div className="flex items-center gap-4">
@@ -123,7 +125,11 @@ function BusinessFeaturesSection() {
                   </div>
 
                   {/* RIGHT ARROW */}
-                  <span className="text-white/60 text-xl">→</span>
+                  <div className="w-8 h-8 flex items-center justify-center
+                  bg-white/10 rounded-full text-white/70">
+                    →
+                  </div>
+
                 </div>
               ))}
             </div>

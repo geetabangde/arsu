@@ -21,10 +21,11 @@ const stats = [
 
 export default function FactsSection() {
   return (
-    <section className="bg-[#010814] py-20 relative overflow-hidden">
+    <section className="bg-[#010814] py-15 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading Section */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-start gap-4">
+
           <div className="relative inline-block max-w-2xl">
             {/* Wave decoration */}
             <svg
@@ -69,15 +70,35 @@ export default function FactsSection() {
             </p>
           </div>
 
-          {/* Floating Play Button */}
-          <div className="hidden lg:block flex-shrink-0">
-            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform">
-              {/* Play Triangle */}
-              <svg width="24" height="28" viewBox="0 0 24 28" fill="none" className="ml-1">
-                <path d="M2 2L22 14L2 26V2Z" fill="#FF6347" />
+          {/* Floating Play Button – Soft Ring Version */}
+          <div className="hidden lg:flex flex-shrink-0 relative items-center justify-center">
+
+            {/* Soft outer circle */}
+            <div className="absolute w-48 h-48 rounded-full
+    border border-white/5">
+            </div>
+
+            {/* Inner soft circle */}
+            <div className="absolute w-32 h-32 rounded-full
+    border border-white/10">
+            </div>
+
+            {/* Play Button */}
+            <div className="relative z-10 w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl cursor-pointer">
+
+              <svg
+                width="22"
+                height="26"
+                viewBox="0 0 24 28"
+                fill="none"
+                className="ml-1"
+              >
+                <path d="M2 2L22 14L2 26V2Z" fill="#FF6A3D" />
               </svg>
+
             </div>
           </div>
+
         </div>
 
         {/* Stats Cards - Right Side Tilt */}

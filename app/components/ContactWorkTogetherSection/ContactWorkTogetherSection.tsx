@@ -20,18 +20,35 @@ export default function ContactWorkTogetherSection() {
 
         {/* ================= RIGHT FORM ================= */}
         <div className="relative">
+           <svg
+              width="46"
+              height="10"
+              viewBox="0 0 46 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute -top-5 left-10 -translate-x-1/2"
+            >
+              <path
+                d="M1 5 
+                    C5 1, 9 9, 13 5 
+                    C17 1, 21 9, 25 5
+                    C29 1, 33 9, 37 5
+                    C41 1, 45 9, 49 5"
+                stroke="url(#waveGradient)"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <defs>
+                <linearGradient id="waveGradient" x1="0" y1="0" x2="46" y2="0">
+                  <stop stopColor="#186EF2" />
+                  <stop offset="1" stopColor="#6D18EF" />
+                </linearGradient>
+              </defs>
+            </svg>
 
           {/* Ghost */}
-          <div className="absolute -left-4 top-0 text-[120px] font-black text-white/5 leading-none pointer-events-none">
+          <div className="absolute -left-4 -top-15 text-[120px] font-black text-white/5 leading-none pointer-events-none">
             CALL
-          </div>
-
-          {/* Blue Wave */}
-          <div className="flex items-center gap-2 mb-5 relative z-10">
-            <span className="relative w-12 h-[3px] bg-indigo-500 rounded-full">
-              <span className="absolute -top-1 left-1 w-2 h-2 bg-indigo-500 rounded-full"></span>
-              <span className="absolute -top-1 right-1 w-2 h-2 bg-indigo-500 rounded-full"></span>
-            </span>
           </div>
 
           {/* Heading */}
