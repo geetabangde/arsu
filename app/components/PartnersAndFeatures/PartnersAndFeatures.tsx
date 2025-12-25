@@ -59,7 +59,7 @@ const PartnersAndFeatures = () => {
               BRAND
             </h2>
 
-            <h2 className="relative z-10 text-3xl lg:text-4xl font-bold text-white">
+          <h2 className="relative z-10 text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
               We’ve More Then <span className="text-cyan-400">254+</span> <br />
               Global Partners
             </h2>
@@ -104,13 +104,8 @@ const PartnersAndFeatures = () => {
             </span>
           </button>
         </div>
-
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
           <div className="relative flex justify-center items-center">
-
-
             <Image
               src="/images/features-character.png"
               alt="Character"
@@ -137,7 +132,7 @@ const PartnersAndFeatures = () => {
                 viewBox="0 0 46 10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-3 left-20 -translate-x-1/2"
+                className="absolute -top-3 left-0 sm:left-20"
               >
                 <path
                   d="M1 5 
@@ -159,20 +154,16 @@ const PartnersAndFeatures = () => {
               <h3 className="ghost-outline-heading ghost-outline-lg">
                 FEATURES
               </h3>
-
               <h3 className="relative z-10 text-3xl font-bold text-white">
                 Explore Our Professional <br /> Business Solutions
               </h3>
             </div>
-
-
             <div className="grid sm:grid-cols-2 gap-8">
               {features.map((feature) => (
                 <div
                   key={feature.title}
                   className="flex gap-4 items-start"
                 >
-
                   <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5">
                     <Image
                       src={feature.icon}
@@ -182,8 +173,6 @@ const PartnersAndFeatures = () => {
                       className="object-contain"
                     />
                   </div>
-
-
                   <div>
                     <h4 className="text-white font-semibold text-lg">
                       {feature.title}
@@ -195,10 +184,8 @@ const PartnersAndFeatures = () => {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

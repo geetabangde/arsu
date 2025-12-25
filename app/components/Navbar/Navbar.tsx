@@ -58,7 +58,6 @@ const Navbar = () => {
             {navItems.map((item) => {
               const active = isItemActive(item);
               const isHome = item.name === "Home";
-
               return (
                 <Link
                   key={item.name}
@@ -67,8 +66,6 @@ const Navbar = () => {
                     ${active ? "text-white" : "text-gray-300 hover:text-cyan-400"}`}
                 >
                   {item.name}
-
-
                   <span
                     className={`text-xs transition-transform duration-300
                       ${isHome
@@ -109,8 +106,6 @@ const Navbar = () => {
             />
           </button>
         </div>
-
-
         <div
           className={`lg:hidden overflow-hidden transition-all duration-500 ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             }`}

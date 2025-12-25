@@ -31,7 +31,7 @@ function BussinessSection() {
                 </linearGradient>
               </defs>
             </svg>
-          
+
             <h2 className="ghost-outline-heading ghost-outline-lg">
               WHO
             </h2>

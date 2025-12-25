@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-
 @theme {
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float-delayed 8s ease-in-out infinite;
@@ -58,8 +56,6 @@
     opacity: 0;
   }
 }
-
-
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -80,7 +76,6 @@
 .animate-scroll {
   animation: scroll 2s ease-in-out infinite;
 }
-
 
 .delay-300 {
   animation-delay: 300ms;
@@ -112,17 +107,10 @@
   animation: gridMove 20s linear infinite;
 }
 
-
-
-/* ===============================
-   Auto-Aligned Outline Ghost Text
-================================ */
-
 .ghost-outline-heading {
   position: absolute;
-  inset-inline: 0;                 /* left + right = 0 (auto center) */
-  top: -3.25rem;                   /* working space from main heading */
-
+  inset-inline: 0;                 
+  top: -3.25rem;
   text-align: center;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -132,8 +120,6 @@
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
 }
-
-/* Controlled size (no overflow) */
 .ghost-outline-lg {
   font-size: 61px;
   line-height: 1;
@@ -144,7 +130,6 @@
     font-size: 120px;
   }
 }
-
 
 .ghost-outline-heading {
   position: absolute;
@@ -170,5 +155,14 @@
   }
 }
 
+.ghost-outline-lg {
+  font-size: 120px;
+}
+
+@media (max-width: 768px) {
+  .ghost-outline-lg {
+    font-size: 64px;
+  }
+}
 
 

@@ -24,11 +24,7 @@ export default function CompletedProjectsSection() {
   return (
     <section className="bg-[#010814] py-28 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-
-        {/* ================= HEADING ================= */}
         <div className="relative text-center mb-20">
-
-          {/* Wave */}
           <svg
             width="46"
             height="10"
@@ -53,27 +49,20 @@ export default function CompletedProjectsSection() {
               </linearGradient>
             </defs>
           </svg>
-
-          {/* Ghost text */}
           <h2 className="ghost-outline-heading ghost-outline-lg">
             PROJECTS
           </h2>
-
-          {/* Main heading */}
           <h3 className="relative z-10 text-4xl md:text-5xl font-bold text-white leading-tight">
             Checkout our Recently <br />
             Completed Projects
           </h3>
         </div>
-
-        {/* ================= CARDS ================= */}
         <div className="grid md:grid-cols-3 gap-10">
           {projects.map((project, i) => (
             <div
               key={i}
               className="relative overflow-hidden group"
             >
-              {/* Image */}
               <Image
                 src={project.image}
                 alt={project.title}
@@ -82,48 +71,34 @@ export default function CompletedProjectsSection() {
                 className="w-full h-[440px] object-cover
                 transition-transform duration-700 group-hover:scale-110"
               />
-
-              {/* Dark overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent"></div>
-
-              {/* Content */}
               <div className="absolute bottom-6 left-6 right-6 z-10">
-
-                {/* Category pill */}
                 <span
                   className="
                     inline-block
                     text-sm font-medium text-white
                     px-4 py-2
-                    
                     bg-gradient-to-r from-indigo-600 to-purple-600
                     relative z-20
                   "
                 >
                   {project.category}
                 </span>
-
-                {/* Title box (CHIPKA HUA) */}
                 <div
                   className="
                     bg-[#23263a]
                     -mt-2
                     px-7 py-6
-                   
-                    shadow-[0_25px_50px_rgba(0,0,0,0.45)]
-                  "
+                    shadow-[0_25px_50px_rgba(0,0,0,0.45)]"
                 >
                   <h4 className="text-white text-xl font-semibold leading-snug">
                     {project.title}
                   </h4>
                 </div>
-
               </div>
             </div>
           ))}
         </div>
-
-        {/* ================= DOTS ================= */}
         <div className="flex justify-center gap-3 mt-14">
           <span className="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
           <span className="w-2.5 h-2.5 rounded-full bg-white/30"></span>

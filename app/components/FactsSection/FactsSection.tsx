@@ -23,11 +23,8 @@ export default function FactsSection() {
   return (
     <section className="bg-[#010814] py-15 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading Section */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-start gap-4">
-
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-start gap-4 lg:gap-24">
           <div className="relative inline-block max-w-2xl">
-            {/* Wave decoration */}
             <svg
               width="46"
               height="10"
@@ -49,43 +46,26 @@ export default function FactsSection() {
                 </linearGradient>
               </defs>
             </svg>
-
-            {/* Ghost Text */}
             <div
               className="absolute -left-4 -top-12 text-[140px] font-black leading-none pointer-events-none select-none"
               style={{ color: "rgba(255, 255, 255, 0.03)" }}
             >
               FACT
             </div>
-
             <h3 className="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight relative z-10">
               Let's See Our Company <br />
               Achievement
             </h3>
-
             <p className="text-gray-400 mt-4 max-w-md leading-relaxed relative z-10">
               Sed ut perspiciatis unde omnis iste natus error sit ways
               voluptatem accusantium doloremque laudantium totam rem aperiam
               eaque ipsa quae abillo inventore
             </p>
           </div>
-
-          {/* Floating Play Button – Soft Ring Version */}
-          <div className="hidden lg:flex flex-shrink-0 relative items-center justify-center">
-
-            {/* Soft outer circle */}
-            <div className="absolute w-48 h-48 rounded-full
-    border border-white/5">
-            </div>
-
-            {/* Inner soft circle */}
-            <div className="absolute w-32 h-32 rounded-full
-    border border-white/10">
-            </div>
-
-            {/* Play Button */}
+          <div className="hidden lg:flex flex-shrink-0 relative items-center justify-center lg:ml-80">
+            <div className="absolute w-48 h-48 rounded-full border border-white/5"></div>
+            <div className="absolute w-32 h-32 rounded-full border border-white/10"></div>
             <div className="relative z-10 w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl cursor-pointer">
-
               <svg
                 width="22"
                 height="26"
@@ -95,13 +75,9 @@ export default function FactsSection() {
               >
                 <path d="M2 2L22 14L2 26V2Z" fill="#FF6A3D" />
               </svg>
-
             </div>
           </div>
-
         </div>
-
-        {/* Stats Cards - Right Side Tilt */}
         <div className="grid md:grid-cols-3 gap-10 mt-20">
           {stats.map((item, i) => (
             <div
@@ -113,7 +89,7 @@ export default function FactsSection() {
               }}
             >
               <div className="bg-[#292738] rounded-2xl px-10 py-12 text-center border border-white/10 shadow-2xl">
-                {/* Icon with proper Image component */}
+
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 relative">
                     <Image
@@ -125,13 +101,9 @@ export default function FactsSection() {
                     />
                   </div>
                 </div>
-
-                {/* Value */}
                 <h3 className="text-5xl font-bold text-white mb-3">
                   {item.value}
                 </h3>
-
-                {/* Label */}
                 <p className="text-gray-200 text-base">{item.label}</p>
               </div>
             </div>

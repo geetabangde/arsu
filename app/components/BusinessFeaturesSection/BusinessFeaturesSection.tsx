@@ -29,7 +29,7 @@ const services = [
     title: "Web Strategy",
     desc: "Sed ut perspiciatis unde omnis",
     icon: "/images/web.png",
-   offset: "lg:-translate-x-30",
+    offset: "lg:-translate-x-30",
   },
 ];
 
@@ -38,8 +38,6 @@ function BusinessFeaturesSection() {
     <>
       <section className="bg-[#010814] py-28 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-20 items-center">
-
-          {/* LEFT IMAGE */}
           <Image
             src="/images/growth-illustration.png"
             alt=""
@@ -47,8 +45,6 @@ function BusinessFeaturesSection() {
             height={480}
             className="mx-auto"
           />
-
-          {/* RIGHT CONTENT */}
           <div className="relative space-y-8 max-w-xl ml-auto">
             <svg
               width="46"
@@ -75,19 +71,14 @@ function BusinessFeaturesSection() {
                 </linearGradient>
               </defs>
             </svg>
-
-            {/* Ghost */}
             <h2 className="ghost-outline-heading ghost-outline-lg">
               SERVICES
             </h2>
-
-            {/* Main */}
             <h2 className="relative z-10 text-4xl font-bold text-white leading-tight">
               Great Features To Do Your <br />
               Business Growth & Development
             </h2>
 
-            {/* Cards */}
             <div className="space-y-5">
               {services.map((item, index) => (
                 <div
@@ -99,10 +90,9 @@ function BusinessFeaturesSection() {
                   backdrop-blur-sm
                     ${item.offset}`}
                 >
-                  {/* LEFT SIDE (ICON + TEXT) */}
+
                   <div className="flex items-center gap-4">
 
-                    {/* ICON */}
                     <div className="w-12 h-12 flex items-center justify-center
                         bg-white/10 rounded-lg">
                       <Image
@@ -112,8 +102,6 @@ function BusinessFeaturesSection() {
                         height={28}
                       />
                     </div>
-
-                    {/* TEXT */}
                     <div>
                       <h4 className="text-white font-semibold">
                         {item.title}
@@ -123,8 +111,6 @@ function BusinessFeaturesSection() {
                       </p>
                     </div>
                   </div>
-
-                  {/* RIGHT ARROW */}
                   <div className="w-8 h-8 flex items-center justify-center
                   bg-white/10 rounded-full text-white/70">
                     →
