@@ -115,11 +115,9 @@ function BusinessFeaturesSection() {
                   bg-white/10 rounded-full text-white/70">
                     →
                   </div>
-
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>

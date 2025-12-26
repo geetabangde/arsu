@@ -14,7 +14,6 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
   return (
    <main className="relative min-h-screen">
-      {/* Main Content */}
       <div className="relative bg-[#081420] min-h-screen">
         <Navbar />
         <HeroSection />
@@ -27,11 +26,7 @@ export default function Home() {
         <TestimonialsSection />
         <ContactWorkTogetherSection />
         <Footer />
-
-        
       </div>
     </main>
-
-
   );
 }

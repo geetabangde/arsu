@@ -99,7 +99,7 @@
 }
 
 .hero-grid-bg {
-  background-color: #020b1c;
+  background-color: #000A1F;
   background-image:
     linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
@@ -137,7 +137,7 @@
   top: -3.5rem;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   white-space: nowrap;
   user-select: none;
   pointer-events: none;

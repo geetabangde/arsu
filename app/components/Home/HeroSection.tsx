@@ -1,7 +1,5 @@
 "use client";
-
 import Image from "next/image";
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen pt-24 bg-[#020b1c] hero-grid-bg overflow-hidden">
@@ -59,14 +57,14 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full pointer-events-none">
-        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full h-[160px]">
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full">
           <path
-            d="M0,80 C180,140 360,0 540,40 720,80 900,120 1080,90 1260,60 1440,80 1440,160 L0,160 Z"
+            d="M0,80 C190,140 360,0 540,40 720,80 900,120 1080,90 1260,60 1440,80 1440,160 L0,160 Z"
             fill="#010814"
           />
         </svg>
       </div>
-      <div className="h-[160px]" />
+      
     </section>
   );
 };

@@ -89,7 +89,6 @@ export default function FactsSection() {
               }}
             >
               <div className="bg-[#292738] rounded-2xl px-10 py-12 text-center border border-white/10 shadow-2xl">
-
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 relative">
                     <Image

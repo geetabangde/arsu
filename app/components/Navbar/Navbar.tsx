@@ -41,7 +41,6 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#020B1A] lg:bg-transparent">
-
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/">
@@ -53,7 +52,6 @@ const Navbar = () => {
               className="w-24"
             />
           </Link>
-
           <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => {
               const active = isItemActive(item);

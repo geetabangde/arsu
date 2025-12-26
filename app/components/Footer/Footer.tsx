@@ -13,13 +13,10 @@ export default function Footer() {
               height={50}
               className="w-24"
             />
-
             <p className="text-xs text-white/50 mb-6">
               Information Technology
             </p>
-
             <p className="text-sm text-white/60 mb-4">Follow</p>
-
             <div className="flex gap-3">
               {["f", "t", "in", "ig"].map((item, i) => (
                 <span

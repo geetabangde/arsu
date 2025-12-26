@@ -31,7 +31,6 @@ function BussinessSection() {
                 </linearGradient>
               </defs>
             </svg>
-
             <h2 className="ghost-outline-heading ghost-outline-lg">
               WHO
             </h2>
@@ -40,12 +39,10 @@ function BussinessSection() {
               Modern Business Solutions <br />
               Agency
             </h2>
-
             <p className="text-white/65 max-w-xl">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium totam rem aperiam.
             </p>
-
             <div className="flex flex-wrap gap-4 pt-4">
               {[
                 "Tech Solutions",
@@ -68,7 +65,6 @@ function BussinessSection() {
                   >
                     ✓
                   </div>
-
                   {item}
                 </div>
               ))}
