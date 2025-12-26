@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
           </div>
 
           <h2 className="relative z-10 text-4xl md:text-5xl font-bold text-white leading-tight">
-            People's Say About Our <br />
+            Peoples Say About Our <br />
             Support & Services
           </h2>
         </div>

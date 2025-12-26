@@ -158,7 +158,7 @@ const PartnersAndFeatures = () => {
           ghostText="BRAND"
           title={
             <>
-              We've More Then <span className="text-cyan-400">254+</span> <br />
+              We have More Then <span className="text-cyan-400">254+</span> <br />
               Global Partners
             </>
           }
